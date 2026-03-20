@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 PROJECT_ROOT = os.environ.get("DEVENV_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-MODEL_PATH = os.path.join(PROJECT_ROOT, "models", "en_US-lessac-medium.onnx")
+MODEL_PATH = os.environ.get("PIPER_MODEL_PATH", os.path.join(PROJECT_ROOT, "models", "en_US-lessac-medium.onnx"))
 PIPER_BIN = "piper"
 
 # Piper outputs raw 16-bit PCM at the model's sample rate (usually 22050 Hz)

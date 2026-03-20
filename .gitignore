@@ -1,6 +1,7 @@
 models/*.bin
 models/*.onnx
 models/*.json
+.env
 .devenv/
 .devenv.flake.nix
 devenv.lock
