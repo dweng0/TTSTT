@@ -3,7 +3,7 @@
 {
   packages = with pkgs; [
     piper-tts
-    openai-whisper-cpp
+    whisper-cpp
     ffmpeg
     sox
     curl
