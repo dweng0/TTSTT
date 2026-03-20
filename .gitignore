@@ -1,0 +1,9 @@
+models/*.bin
+models/*.onnx
+models/*.json
+.devenv/
+.devenv.flake.nix
+devenv.lock
+__pycache__/
+*.pyc
+.venv/
