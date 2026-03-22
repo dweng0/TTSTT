@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 PROJECT_ROOT = os.environ.get("DEVENV_ROOT", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 MODEL_PATH = os.environ.get("WHISPER_MODEL_PATH", os.path.join(PROJECT_ROOT, "models", "ggml-base.en.bin"))
-WHISPER_BIN = "whisper-cpp"
+WHISPER_BIN = "whisper-cli"
 
 app = FastAPI(title="Whisper STT Server", version="1.0.0")
 
